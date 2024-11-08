@@ -6,6 +6,7 @@ def find_highest(lst):
     if num > highest:
       highest = num
   return highest
+#print(find_highest([2,4,9,4,8]))
 
 
 
@@ -102,6 +103,7 @@ def staircase(stairs):
     print('ZERO')
 #staircase(5)
     
+
 
 # expert
 def knightsjump(location):
@@ -254,7 +256,6 @@ def minesweeper(ThreeDimensionalArray):
 
   
       print(ThreeDimensionalArray[iteration1])
-
 '''minesweeper([
   [0, 0, 0],
   [0, 0, 0],
@@ -285,7 +286,7 @@ def is_authentic_skewer(skewer1):
     else:
       return False
 
-#makes sure it alternates between consonants and vowels
+  #makes sure it alternates between consonants and vowels
   rangeSkewer2 = range(len(skewer2))
   evens = []
   odds = []
@@ -309,12 +310,11 @@ def is_authentic_skewer(skewer1):
     if skewer2[number].lower() not in consonants:
       return False
   
-#makes sure it doesn't start or end with a vowel
+  #makes sure it doesn't start or end with a vowel
   if (skewer2[0].lower() in vowels) or (skewer2[-1].lower() in vowels):
     return False
   else:
     return True
-
 #print(is_authentic_skewer('r-----a-----b-----b-----t')) 
 
 
@@ -334,7 +334,6 @@ def simplify(fraction):
     denominatorList.append(number)
   denominatorList.reverse()
   
-
   for numeratornumber in numeratorList[:-1]:
     dividednum = denominator / numeratornumber
     x = numerator / numeratornumber
@@ -353,12 +352,12 @@ def simplify(fraction):
   if result == fraction:
     result = 'Already in simplest form'
   return result
-
 #print(simplify('49/7'))
 
 
 
 # medium
+# The use of the len() function is prohibited.
 def length(number):
   def real_count(OGList, countList):
     z = int()
@@ -372,13 +371,12 @@ def length(number):
 
   result = real_count(x, ['0','1','2','3','4','5','6','7','8','9'])
   return result
-
-#print(length(57822))
-
+print("\n", length(200))
 
 
-# -_-'
+
 # hard
+# under construction -_-'
 def seq_level(sequence: list) -> None:
   linear = False
   quadratic = False
@@ -412,18 +410,17 @@ def seq_level(sequence: list) -> None:
     else:
       quadratic = True
 
-
   if linear == True:
     print("\n\nLinear\n")
   if quadratic == True:
     print("\n\nQuadratic\n")
   if cubic == True:
     print("\n\nCubic\n")
-
 #seq_level([1,2,4,7])
 
 
 
+# under construction
 def pascalsTriangle(pyramidSize):
   print('''       
            [ 1 ]
@@ -433,7 +430,6 @@ def pascalsTriangle(pyramidSize):
 [ 1 ][ 4 ][ 6 ][ 4 ][ 1 ]
         ''')
 
-  for size in range(len(pyramidSize)):
+  for size in range(pyramidSize):
     pass
-   
 pascalsTriangle(3)
